@@ -950,6 +950,7 @@ header._active{
     bottom: 50%;
     transform: rotate(45deg) translate(0px, -50%);
 }
+
 @media (min-width: 768px){
     .menu__list{
         display: flex;
