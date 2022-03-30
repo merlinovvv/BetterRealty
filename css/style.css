@@ -81,7 +81,7 @@ header{
     transition: all 0.5s ease 0s;
 }
 .body-background{
-    background-image: url(./img/image-main.jpg);
+    background-image: url(../img/image-main.jpg);
     max-height: 864px;
     background-size: 100%, 100%;
 }
