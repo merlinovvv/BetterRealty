@@ -78,3 +78,11 @@ if(closeMenu){
         header.classList.toggle('_active');
     });
 };
+
+const choise = document.querySelector('select');
+if(choise){
+    const content = document.querySelector('.one__contents');
+    choise.addEventListener("click", function(ee){
+        content.classList.toggle('_active');
+    });
+};
