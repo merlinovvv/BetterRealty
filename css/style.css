@@ -82,13 +82,14 @@ header{
 }
 .body-background{
     background-image: url(../img/image-main.jpg);
-    max-height: 864px;
-    background-size: 100%, 100%;
+    background-size: 100% 100%;
+    background-position: center;
 }
 .container{
-    max-width: 1140px;
+    max-width: 1200px;
     margin: 0 auto;
     height: 100%;
+    padding: 0 30px;
 }
 .menu__icon{
     display: none;
@@ -233,25 +234,25 @@ p, button{
     width: 100%;
     height: 257px;
     background-image: url(../img/main-1.jpg);
-    background-size: 100%, 100%;
+    background-position: center;
 }
 .room__two-room{
     width: 100%;
     height: 257px;
     background-image: url(../img/main-2.jpg);
-    background-size: 100%, 257px;
+    background-position: center;
 }
 .builds__office{
     width: 100%;
     height: 257px;
     background-image: url(../img/main-office.jpg);
-    background-size: 100%, 257px;
+    background-position: center;
 }
 .builds__studio{
     width: 100%;
     height: 257px;
     background-image: url(../img/main-studio.jpg);
-    background-size: 100%, 257px;
+    background-position: center;
 }
 .build__room{
     display: flex;
@@ -418,9 +419,10 @@ h3{
     font-size: 21px;
     line-height: 26px;
     height: 50px;
+    font-family: 'Montserrat', sans-serif;
 }
 input::placeholder{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 21px;
@@ -641,6 +643,7 @@ header._active{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 30px;
 }
 .about__text h1{
     color: #000;
@@ -656,10 +659,11 @@ header._active{
 }
 .about__text .text__sub-title{
     margin-top: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 0;
 }
 .about__video, .video__items{
     max-width: 745px;
+    width: 100%;
 }
 .page__about{
     display: flex;
@@ -667,24 +671,24 @@ header._active{
     align-items: center;
 }
 .text__btn{
-    max-width: 196px;
+    max-width: 303px;
     width: 100%;
 }
 .page__about form{
-    max-width: 196px;
+    max-width: 303px;
     width: 100%;
     display: block;
 }
 .btn__contact{
-    max-width: 196px;
+    max-width: 303px;
     width: 100%;
-    height: 52px;
+    height: 80px;
     background: linear-gradient(90deg, #EB9562 0%, #E0CFA7 148.54%);
     box-shadow: 2.59397px 2.59397px 2.59397px rgba(0, 0, 0, 0.25);
     border-radius: 20.1033px;
     color: #fff;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 20px;
     line-height: 16px;
 }
 .btn__contact:active{
@@ -904,10 +908,6 @@ header._active{
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     transition: 0.3s;
-}
-.contacts__img img{
-    position: relative;
-    right: 70px;
 }
 .contact h2{
     color: #000;
@@ -1190,6 +1190,322 @@ option{
 .images__img ._sale{
     bottom: 330px;
     right: 0px;
+}
+.content__wrap{
+    display: flex;
+    align-items: center;
+}
+.content__img, .content__img img{
+    width: 100%;
+    height: 100%;
+}
+.content__img:nth-child(1){
+    margin-right: 20px;
+}
+.content__wrap:nth-child(1){
+    margin-bottom: 20px;
+}
+.contacts__img img, .contacts__img{
+    width: 100%;
+}
+@media (max-width: 1024px){
+    .container{
+        max-width: 910px;
+        padding: 0 20px;
+    }
+    .header{
+        max-height: 90px;
+    }
+    .header__logo, .header__logo img{
+        max-width: 100px;
+    }
+    .header__menu{
+        max-width: 650px;
+    }
+    .menu__list a{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .black__menu._active{
+        margin-top: 89px;
+    }
+    .menu__sales_center{
+        max-width: 900px;
+    }
+    .menu__sales_center .impose__text h3{ 
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .menu__sales_center .impose__text .text__sub-title p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .menu__sales_center .impose__ipt{
+        max-width: 375px;
+    }
+    .menu__sales_center .impose__text{
+        max-width: 374px;
+    }
+    .menu__sales_center .impose__ipt input::placeholder{
+        font-size: 14px;
+    }
+    .main__enter{
+        padding: 25px 0 0px 0;
+        height: auto;
+    }
+    .enter__text .text__title h1{
+        font-size: 75px;
+        line-height: 80px;
+    }
+    .enter__text .text__sub-title p{
+        font-size: 22px;
+        line-height: 35px;
+    }
+    .enter__text {
+        max-width: 480px;
+    }
+    .enter__text .text__title{
+        margin-bottom: 20px;
+    }
+    .enter__text .text__sub-title{
+        margin-bottom: 0px;
+    }
+    .enter__image .image__img img{
+        max-width: 330px;
+        border: 6px solid #EB9562;
+    }
+    .enter__image .image__img{
+        bottom: 0px;
+    }
+    .enter__button{
+        margin-top: 50px;
+    }
+    .enter__button .button__btn{
+        width: 303px;
+        height: 80px;
+    }
+    .body-background{
+        max-height: 615px;
+    }
+    .room__one-room, .room__two-room, .builds__office, .builds__studio{
+        height: 200px;
+    }
+    .one-room__content, .two-room__content, .office__content, .studio__content{
+        padding-bottom: 20px;
+    }
+    .one-room__content, .office__content{
+        padding-left: 80px;
+    }
+    .rede__title h2{
+        font-size: 50px;
+    }
+    .content__block .block__image img{
+        max-width: 85px;
+    }
+    .content__block:nth-child(1) .text__num p{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .text__num p{
+        font-size: 36px;
+        line-height: 50px;
+        letter-spacing: 0em;
+    }
+    .text__sub-text{
+        font-size: 18px;
+    }
+    .content__block:nth-child(1) {
+        padding: 27px 31px 31px 11px;
+        max-width: 240px;
+        width: 100%;
+    }
+    .content__block:nth-child(2) {
+        padding: 27px 47px 30px 15px;
+        max-width: 325px;
+        width: 100%;
+    }
+    .content__block:nth-child(3) {
+        padding: 27px 37px 27px 24px;
+        max-width: 240px;
+        width: 100%;
+    }
+    .content__block:nth-child(1) .block__text,.content__block:nth-child(3) .block__text {
+        max-width: 90px;
+    }
+    .rede__text p{
+        font-size: 20px;
+        line-height: 28px;    
+    }
+    .map__title h2{
+        font-size: 50px;
+    }
+    iframe{
+        max-height: 500px;
+    }
+    .map__text p{
+        font-size: 20px;
+    }
+    .impose__text h3{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .impose__text .text__sub-title p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .impose__text{
+        max-width: 370px;
+    }
+    .impose__ipt{
+        max-width: 460px;
+    }
+    .impose__ipt input::placeholder{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .impose__ipt input{
+        font-size: 18px;
+    }
+    .footer p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .first-column__text p{
+        font-size: 22px; 
+    }
+    .first-column__logo img{
+        max-width: 120px;
+    }
+    .first-column__social img{
+        max-width: 28px;
+    }
+    .third-column__image img{
+        max-width: 110px;
+    }
+    .third-column__text {
+        max-width: 119px;
+    }
+    footer{
+        max-height: 250px;
+    }
+    .about-city__text h1{
+        font-size: 75px;
+        line-height: 80px;
+    }
+    .page__about{
+        align-items: flex-start;
+    }
+    .about__text h1{
+        font-size: 70px;
+        line-height: 80px;
+    }
+    .about__text p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .about__text .text__sub-title{
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    .text__btn {
+        max-width: 230px;
+        height: 50px;
+        margin: 35px 0 0 0;
+    }
+    .btn__contact {
+        max-width: 230px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 12px;
+    }
+    .page__about form {
+        max-width: 230px;
+        width: 100%;
+        display: block;
+    }
+    .page__plan h2, .page__group h2, .page__list h2{
+        font-size: 46px;
+    }
+    .plan__image{
+        max-width: 80%;
+        max-height: 500px;
+    }
+    .page__group p{
+        font-size: 25px;
+    }
+    .contacts__text .text__title h1 {
+        font-size: 70px;
+        line-height: 80px;
+    }
+    .contacts__text p, .page__contacts .social__mail a{
+        font-size: 32px;
+        line-height: 100%;
+    }
+    .text__social img{
+        width: 80%;
+    }
+    .contacts__text{
+        max-width: 620px;
+    }
+    .facebook__text {
+        margin-right: 26px;
+    }
+    .btn__connect{
+        font-size: 16px;
+    }
+    .builds__content h1{
+        font-size: 70px;
+        line-height: 80px;
+    }
+    .builds__content form {
+        max-width: 250px;
+    }
+    .content__btn {
+        height: 60px;
+    }
+    .btn__choise{
+        font-size: 15px;
+        line-height: 16px;
+    }
+    .list__build{
+        max-width: 424px;
+        max-height: 220px;
+    }
+    .list__build img, .build__img{
+        max-height: 130px;
+        max-width: 160px;
+    }
+    ._sale {
+        bottom: 115px;
+    }
+    .build__text .text__title {
+        margin-bottom: 10px;
+    }
+    .appart__text{
+        max-width: 380px;
+        width: 100%;
+    }
+    .appart__img img, .appart__img{
+        max-width: 450px;
+    }
+    .apps__text p{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .selection__apps{
+        max-width: 329px;
+    }
+    .select__box{
+        width: 65px;
+        height: 43px;
+    }
+    .selection__images img{
+        width: 80%;
+    }
+    .images__img ._sale {
+        bottom: 275px;
+        right: 0px;
+    }
 }
 @media (min-width: 768px){
     .menu__list{
