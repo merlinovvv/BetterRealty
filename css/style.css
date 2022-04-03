@@ -160,8 +160,11 @@ p, button{
 .text__sub-title{
     margin-bottom: 62px;
 }
+.enter__button form{
+    width: 100%;
+}
 .button__btn{
-    width: 376px;
+    max-width: 376px;
     height: 100px;
 }
 .btn__choise{
@@ -235,24 +238,28 @@ p, button{
     height: 257px;
     background-image: url(../img/main-1.jpg);
     background-position: center;
+    background-size: 100% 100%;
 }
 .room__two-room{
     width: 100%;
     height: 257px;
     background-image: url(../img/main-2.jpg);
     background-position: center;
+    background-size: 100% 100%;
 }
 .builds__office{
     width: 100%;
     height: 257px;
     background-image: url(../img/main-office.jpg);
     background-position: center;
+    background-size: 100% 100%;
 }
 .builds__studio{
     width: 100%;
     height: 257px;
     background-image: url(../img/main-studio.jpg);
     background-position: center;
+    background-size: 100% 100%;
 }
 .build__room{
     display: flex;
@@ -1285,8 +1292,8 @@ option{
         margin-top: 50px;
     }
     .enter__button .button__btn{
-        width: 303px;
-        height: 80px;
+        max-width: 303px;
+        max-height: 80px;
     }
     .body-background{
         max-height: 615px;
@@ -1647,5 +1654,153 @@ option{
     }
     .enter__image .image__img{
         position: static;
+    }
+    .enter__button .button__btn{
+        max-height: 50px;
+    }
+    .btn__choise{
+        max-width: 230px;
+        max-height: 50px;
+        font-size: 12px;
+    }
+    .button__circle {
+        max-width: 50px;
+        max-height: 50px;
+        border: 2px solid #EB9562;
+    }
+    .circle__arrow i {
+        border-width: 0px 2px 2px 0;
+        padding: 7px;
+    }
+    .arrow__strip{
+        left: 18px;
+    }
+    .circle__arrow{
+        right: 101px;
+    }
+    .room__one-room{
+        max-height: 257px;
+        background-size: auto;
+    }
+    .room__two-room{
+        max-height: 257px;
+        background-size: auto;
+    }
+    .builds__office{
+        max-height: 257px;
+        background-size: auto;
+    }
+    .builds__studio{
+        max-height: 257px;
+        background-size: auto;
+    }
+    .content__text a{
+        font-size: 14px;
+    }
+    .content__text i{
+        padding: 4px;
+    }
+    .body-background {
+        max-height: 500px;
+    }
+    .page {
+        margin-top: 40px;
+    }
+    .rede__title h2 {
+        font-size: 44px;
+    }
+    .content__block:nth-child(1) {
+        padding: 15px 15px 15px 10px;
+        max-width: 200px;
+    }
+    .content__block:nth-child(3) {
+        padding: 15px 15px 15px 10px;
+        max-width: 200px;
+    }
+    .content__block .block__image img {
+        max-width: 64px;
+    }
+    .content__block:nth-child(1) .text__num p {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .content__block:nth-child(2) {
+        padding: 15px 15px 15px 10px;
+        max-width: 240px;
+    }
+    .text__num p {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .text__sub-text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .rede__text p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .rede__content {
+        margin: 40px 0 40px;
+    }
+    .page__map {
+        margin-top: 60px;
+    }
+    iframe {
+        max-height: 360px;
+    }
+    .map__title h2 {
+        font-size: 44px;
+    }
+    .map__text p {
+        font-size: 16px;
+    }
+    .page__form{
+        margin-top: 75px;
+    }
+    .impose__text h3 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .impose__text .text__sub-title p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .impose__ipt input, .impose__ipt input::placeholder {
+        font-size: 12px;
+    }
+    .impose__ipt input{
+        padding: 6px 12px;
+        height: 40px;
+    }
+    .form__btn {
+        max-width: 210px;
+        max-height: 45px;
+    }
+    .btn__send {
+        max-height: 45px;
+        font-size: 12px
+    }
+    .first-column__logo img, .first-column__logo{
+        max-width: 100px;
+    }
+    .first-column__text p {
+        font-size: 18px;
+    }
+    .first-column__social img {
+        max-width: 25px;
+    }
+    .first-column__social{
+        max-width: 150px;
+    }
+    .footer p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .third-column__image img {
+        max-width: 80px;
+    }
+    footer {
+        max-height: 210px;
     }
 }
