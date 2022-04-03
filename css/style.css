@@ -917,11 +917,12 @@ header._active{
     font-weight: 500;
 }
 .menu__close{
+    margin-top: 50px;
     z-index: 5;
     display: block;
-    position: relative;
+    position: absolute;
     width: 30px;
-    height: 18px;
+    height: 30px;
     cursor: pointer;
 }
 .menu__close span,
@@ -929,7 +930,7 @@ header._active{
 .menu__close::after{
     left: 0;
     position: absolute;
-    height: 10%;
+    height: 7%;
     width: 100%;
     transition: all 0.3s ease 0s;
     background-color: #fff;
@@ -944,7 +945,7 @@ header._active{
     bottom: 0;
 }
 .menu__close span{
-    top: 50%;
+    top: 45%;
     transform: scale(1) translate(0px, -50%);
 }
 .menu__close span{
@@ -1209,6 +1210,9 @@ option{
     width: 100%;
 }
 @media (max-width: 1024px){
+    .menu__close{
+        display: block;
+    }
     .container{
         max-width: 910px;
         padding: 0 20px;
@@ -1534,7 +1538,7 @@ option{
         display: block;
         position: relative;
         width: 30px;
-        height: 18px;
+        height: 30px;
         cursor: pointer;
     }
     .menu__icon span,
@@ -1542,7 +1546,7 @@ option{
     .menu__icon::after{
         left: 0;
         position: absolute;
-        height: 10%;
+        height: 8%;
         width: 100%;
         transition: all 0.3s ease 0s;
         background-color: #fff;
@@ -1561,10 +1565,11 @@ option{
         transform: scale(1) translate(0px, -50%);
     }
     .menu__icon._active span{
+        /* display: none; */
         transform: scale(0) translate(0px, -50%);
     }
     .menu__icon._active::before{
-        top: 50%;
+        top: 45%;
         transform: rotate(-45deg) translate(0px, -50%);
     }
     .menu__icon._active::after{
@@ -1574,41 +1579,73 @@ option{
     .menu__body{
         position: fixed;
         top: 0;
-        left: -100%;
-        width: 100%;
+        left: 100%;
+        width: 50%;
         height: 100%;
-        padding: 128px 30px 30px 30px;
-        background-color: rgba(0,0,0,0.9);
+        padding: 28px 0px 0px 9px;
+        background: #562000;
+        border-radius: 43px 0px 0px 43px;
         transition: all 0.3s ease 0s;
         overflow: auto;
+        margin-top: 30px;
+    }
+    .body__menu{
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 43px 0 0px 43px;
+        width: 100%;
+        height: 100%;
     }
     .menu__body._active{
-        left: 0;
+        left: 50%;
     }
     .menu__body::before{
         content: "";
-        left: -100%;
-    }
-    .menu__body._active::before{
-        content: "";
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        height: 128px;
-        background-color: #000;
-        z-index: 2;
-        transition: all 0.3s ease 0s;
+        left: 100%;
     }
     .menu__list{
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-end;
     }
-    .menu__list > li{
-        margin: 0px 0px 20px 0px;
+    .menu__list li{
+        display: block;
+        border: 0.45px solid #8D3500;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 5px 25px;
+        margin-bottom: 25px;
     }
-    .menu__list >li:last-child{
-        margin-bottom: 0;
+    .menu__list li:hover{
+        background: linear-gradient(90deg, #EB9562 0%, rgba(255, 255, 255, 0.9) 170%);
     }
-    
+    .menu__list li:first-child{
+        margin-top: 20px;
+    }
+    .menu__list li:last-child{
+        margin: 0;
+    }
+    .menu__list a{
+        color: #000000;
+    }
+    .enter__text {
+        max-width: 330px;
+    }
+    .enter__text .text__title h1 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+    .enter__text .text__sub-title p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    img{
+        z-index: 0;
+        position: static;
+    }
+    .enter__image .image__img img {
+        max-width: 230px;
+        border: 3px solid #EB9562;
+    }
+    .enter__image .image__img{
+        position: static;
+    }
 }
