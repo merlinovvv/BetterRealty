@@ -518,7 +518,7 @@ footer{
 .black__menu{
     display: flex;
     background: rgba(0, 0, 0, 0.7);
-    top: -200%;
+    top: -500%;
     position: absolute;
     transition: all 0.3s ease 0s;
     align-items: center;
@@ -1216,6 +1216,10 @@ option{
 .contacts__img img, .contacts__img{
     width: 100%;
 }
+video, source{
+    z-index: auto;
+    position: static;
+}
 .footer__third-column{
     display: flex;
     flex-direction: column;
@@ -1536,6 +1540,12 @@ option{
     }
 }
 @media (max-width: 768px){
+    .menu__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
     header{
         z-index: 1000;
     }
@@ -1626,6 +1636,7 @@ option{
         border-radius: 8px;
         padding: 5px 25px;
         margin-bottom: 25px;
+        max-width: 80%;
     }
     .menu__list li:hover{
         background: linear-gradient(90deg, #EB9562 0%, rgba(255, 255, 255, 0.9) 170%);
@@ -1808,5 +1819,243 @@ option{
     }
     footer {
         max-height: 210px;
+    }
+    .about-city__text h1 {
+        font-size: 55px;
+        line-height: 55px;
+    }
+    .about-city__text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .page__about-city form {
+        max-width: 250px;
+    }
+    .about__text h1 {
+        font-size: 55px;
+        line-height: 55px;
+    }
+    .about__text p, .about__text{
+        align-items: flex-start;
+        text-align: start;
+    }
+    .about__text {
+        max-width: 250px;
+    }
+    .page__plan h2, .page__group h2, .page__list h2 {
+        font-size: 40px;
+    }
+    .plan__text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .plan__image {
+        max-height: 400px;
+    }
+    .page__group p {
+        font-size: 20px;
+    }
+    .content__logo img{
+        max-width: 200px;
+    }
+    .contacts__text .text__title h1 {
+        font-size: 55px;
+    }
+    .contacts__text p, .page__contacts .social__mail a {
+        font-size: 22px;
+        line-height: 100%;
+    }
+    .text__social img {
+        width: 70%;
+    }
+    .insta__text {
+        margin-right: 15px;
+    }
+    .facebook__text {
+        margin-right: 20px;
+    }
+    .btn__connect {
+        font-size: 12px;
+    }
+    .map__title h2 {
+        font-size: 40px;
+    }
+    .builds__image img{
+        width: 100%;
+    }
+    .builds__content h1 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+    .builds__content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .builds__content .content__text {
+        padding: 0;
+        background: none;
+        max-width: 280px;
+        margin: 23px 0 30px;
+    }
+    .list__build{
+        margin-right: 0;
+    }
+    .appart__img img, .appart__img {
+        max-width: 450px;
+        width: 100%;
+    }
+    .appart__img{
+        margin-bottom: 30px;
+    }
+    .appart__text h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .appart__text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .appart__text .text__sub-title {
+        margin: 29px 0px 30px;
+    }
+    .selection__apps {
+        padding: 15px 10px 15px 20px;
+        border-radius: 17px;
+        max-width: 310px;
+        margin-bottom: 55px;
+        width: 100%;
+    }
+    .selection__images {
+        margin-bottom: 30px;
+        max-height: 300px;
+    }
+    .images__img {
+        max-height: 285px;
+    }
+    .images__img ._sale {
+        bottom: 220px;
+    }
+    .page__selection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .selection__content p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .selection__text p{
+        text-align: center;
+    }
+    .page__appart{
+        flex-direction: column;
+    }
+    .appart__text {
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    form{
+        width: 100%;
+    }
+    .menu__sales_center{
+        max-height: 1000px;
+    }
+    .sales_center__form .form__impose{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .sales_center__form .impose__text, .sales_center__form .impose__text .text__sub-title{
+        max-width: 100%;
+    }
+    .sales_center__form .impose__text{
+        margin-bottom: 20px;
+    }
+    .menu__sales_center .impose__ipt{
+        max-width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .body-background {
+        max-height: 440px;
+    }
+    .menu__list a {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .main__enter{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .enter__image, .button__circle{
+        display: none;
+    }
+    .enter__text{
+        max-width: 100%;
+    }
+    .enter__button{
+        max-width: 230px;
+    }
+    .build__room, .build__builds{
+        flex-direction: column;
+    }
+    .two-room__content, .studio__content{
+        padding-left: 80px
+    }
+    .rede__content{
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .content__block:nth-child(1){
+        margin-right: 10px;
+    }
+    .content__block:nth-child(2){
+        order: 1;
+        margin-top: 10px;
+    }
+    .form__impose{
+        flex-direction: column;
+    }
+    .impose__text{
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .impose__text .text__title,.impose__text .text__sub-title{
+        max-width: 100%;
+    }
+    .about-city__btn{
+        margin-top: 0px;
+    }
+    .page__about{
+        flex-direction: column;
+    }
+    .about__text{
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .page__plan h2, .page__group h2, .page__list h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .page__group{
+        align-items: center;
+        text-align: center;
+    }
+    .group__content{
+        flex-direction: column;
+    }
+    .content__logo img{
+        max-width: 80%;
+    }
+    .content__logo{
+        margin-bottom: 20px;
     }
 }
