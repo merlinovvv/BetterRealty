@@ -2059,3 +2059,138 @@ video, source{
         margin-bottom: 20px;
     }
 }
+@media (max-width: 480px){
+    .header__logo, .header__logo img {
+        max-width: 77px;
+    }
+    .enter__text .text__sub-title p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .enter__text .text__title h1 {
+        font-size: 36px;
+        line-height: 30px;
+    }
+    .body-background {
+        max-height: 370px;
+    }
+    .header {
+        max-height: 70px;
+    }
+    .menu__icon{
+        width: 26px;
+        height: 26px;
+    }
+    .room__one-room, .room__two-room, .builds__office, .builds__studio{
+        max-height: 150px;
+        background-size: 100% 100%;
+    }
+    .one-room__content, .office__content {
+        padding-left: 20px;
+    }
+    .two-room__content, .studio__content {
+        padding-left: 20px;
+    }
+    .rede__title h2 {
+        font-size: 31px;
+        line-height: 36px;
+    }
+    .page {
+        margin-top: 30px;
+    }
+    .content__block:nth-child(1) .text__num p, .content__block .text__num p{
+        font-family: 'Helios', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+    }
+    .content__block:nth-child(1), .content__block:nth-child(2), .content__block:nth-child(3) {
+        padding: 10px 10px 10px 10px;
+        max-width: 130px;
+    }
+    .content__block:nth-child(1){
+        margin-right: 20px;
+    }
+    .content__block:nth-child(2){
+        max-width: 180px;
+        margin-top: 20px;
+    }
+    .block__text {
+        text-align: start;
+        margin-left: 8px;
+    }
+    .content__block .block__image img, .block__image{
+        max-width: 48px;
+    }
+    .text__sub-text {
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .rede__content {
+        justify-content: space-evenly;
+    }
+    .rede__content {
+        margin: 20px 0 15px;
+    }
+    .rede__text p {
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .page__map {
+        margin-top: 10px;
+    }
+    .map__title h2 {
+        font-size: 31px;
+        line-height: 36px;
+    }
+    iframe {
+        max-height: 130px;
+    }
+    .map__map {
+        margin: 10px 0 10px;
+    }
+    .map__text p {
+        font-size: 11px;
+        color: #8D3500;
+        font-weight: 500;
+    }
+    .page__form {
+        margin-top: 20px;
+    }
+    .impose__text h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 500
+    }
+    .impose__text .text__sub-title p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .impose__text .text__sub-title {
+        margin: 6px 0 0 0;
+    }
+    .impose__ipt input {
+        height: 30px;
+    }
+    .impose__ipt input::placeholder{
+        font-size: 11px;
+    }
+    .form__btn {
+        max-width: 170px;
+        max-height: 45px;
+        margin-top: 20px;
+    }
+    .btn__send {
+        font-size: 11px;
+    }
+    .impose__text{
+        margin-bottom: 10px;
+    }
+    footer{
+        margin-top: 30px;
+        max-height: 136px;
+    }
+}
